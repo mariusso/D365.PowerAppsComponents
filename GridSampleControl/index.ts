@@ -1,9 +1,9 @@
 import { IInputs, IOutputs } from "./generated/ManifestTypes";
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { GridSample, IGridSampleProps } from "./app";
+import { GridSampleControl, IGridSampleProps } from "./GridSampleControl";
 
-export class GridSampleControl implements ComponentFramework.StandardControl<IInputs, IOutputs> {
+export class GridSampleControlIndex implements ComponentFramework.StandardControl<IInputs, IOutputs> {
 
 	// Reference to the container div
 	private theContainer: HTMLDivElement;
@@ -23,7 +23,8 @@ export class GridSampleControl implements ComponentFramework.StandardControl<IIn
 	public init(context: ComponentFramework.Context<IInputs>, notifyOutputChanged: () => void, state: ComponentFramework.Dictionary, container: HTMLDivElement) {
 		this.theContainer = container;
 		this.props = {
-			Context: context
+			DataSet: context.parameters.GridSampleData,
+			WebApi: context.webAPI,
 		};
 	}
 
@@ -32,9 +33,11 @@ export class GridSampleControl implements ComponentFramework.StandardControl<IIn
 	 * @param context The entire property bag available to control via Context Object; It contains values as set up by the customizer mapped to names defined in the manifest, as well as utility functions
 	 */
 	public updateView(context: ComponentFramework.Context<IInputs>): void {
-		this.props.Context = context;
+		console.log("updateView");
+		this.props.DataSet = context.parameters.GridSampleData;
+		this.props.WebApi = context.webAPI;
 		ReactDOM.render(
-			React.createElement(GridSample, this.props),
+			React.createElement(GridSampleControl, this.props),
 			this.theContainer
 		);
 	}

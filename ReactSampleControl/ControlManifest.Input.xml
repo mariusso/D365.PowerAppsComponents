@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="D365PowerAppsComponents" constructor="ReactSampleControl" version="0.0.1" display-name-key="ReactSampleControl" description-key="ReactSampleControl description" control-type="standard">
+  <control namespace="D365PowerAppsComponents" constructor="ReactSampleControlIndex" version="0.0.1" display-name-key="ReactSampleControl" description-key="ReactSampleControl description" control-type="standard">
     <property name="text" display-name-key="Text" description-key="Text" of-type="SingleLine.Text" usage="bound" required="true" />
     <property name="placeholder" display-name-key="Placeholder" description-key="Text" of-type="SingleLine.Text" usage="input" required="true" />
     <!-- 

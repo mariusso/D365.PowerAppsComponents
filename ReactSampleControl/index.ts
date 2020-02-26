@@ -1,9 +1,9 @@
 import { IInputs, IOutputs } from "./generated/ManifestTypes";
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import App, {IReacSampleControlProps} from "./app";
+import ReactSampleControl, {IReacSampleControlProps} from "./ReactSampleControl";
 
-export class ReactSampleControl implements ComponentFramework.StandardControl<IInputs, IOutputs> {
+export class ReactSampleControlIndex implements ComponentFramework.StandardControl<IInputs, IOutputs> {
 
 	// Reference to the notifyOutputChanged method
 	private notifyOutputChanged: () => void;
@@ -44,9 +44,7 @@ export class ReactSampleControl implements ComponentFramework.StandardControl<II
 		ReactDOM.render(
 			// Create the React component
 			React.createElement(
-				App, // the class type of the React component found in App.tsx
-				this.props
-			),
+				ReactSampleControl, this.props),
 			this.theContainer
 		);
 	}

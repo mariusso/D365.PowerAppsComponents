@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="D365PowerAppComponents" constructor="GridSampleControl" version="0.0.1" display-name-key="GridSampleControl" description-key="GridSampleControl" control-type="standard">
+  <control namespace="D365PowerAppComponents" constructor="GridSampleControlIndex" version="0.0.1" display-name-key="GridSampleControl" description-key="GridSampleControl" control-type="standard">
     <data-set name="GridSampleData" display-name-key="GridSampleData" description-key="GridSampleData" cds-data-set-options="displayCommandBar:true;displayViewSelector:true;displayQuickFindSearch:true">
     </data-set>
     <resources>
