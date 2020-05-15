@@ -5,7 +5,7 @@
     </data-set>
     <resources>
       <code path="index.ts" order="2"/>
-      <css path="css/office-ui-fabric-react.css" order="1" />
+      <css path="css/officeUiFabricReact.css" order="1" />
       <css path="css/GridSampleControl.css" order="1" />
     </resources>
     <feature-usage>
