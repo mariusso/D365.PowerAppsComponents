@@ -8,9 +8,9 @@
   <Import Project="$(PowerAppsTargetsPath)\Microsoft.PowerApps.VisualStudio.Pcf.props" Condition="Exists('$(PowerAppsTargetsPath)\Microsoft.PowerApps.VisualStudio.Pcf.props')"/>
   
   <PropertyGroup>
-    <Name>D365.PowerAppsComponents</Name>
-    <ProjectGuid>69cad876-f72a-434e-adff-529429477c0b</ProjectGuid>
-    <OutputPath>$(MSBuildThisFileDirectory)out\controls</OutputPath>
+    <Name>InternationalPhoneInput</Name>
+    <ProjectGuid>29967d5e-c4e7-448d-a7c3-7c6d3558042e</ProjectGuid>
+    <OutputPath>$(MSBuildThisFileDirectory)out\components</OutputPath>
   </PropertyGroup>
 
   <PropertyGroup>

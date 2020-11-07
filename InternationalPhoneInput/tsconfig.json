@@ -1,0 +1,14 @@
+{
+    "extends": "./node_modules/pcf-scripts/tsconfig_base.json",
+    "compilerOptions": {
+        "typeRoots": ["node_modules/@types", "./types"],
+        "esModuleInterop": true,
+        "strictNullChecks": false,
+        "noImplicitAny": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "jsx": "react",
+    },
+    "exclude": [
+        "./types"
+    ]
+}

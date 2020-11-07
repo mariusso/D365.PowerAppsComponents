@@ -1,9 +1,10 @@
 .iti {
   position: relative;
   display: flex }
-  .iti * {
+  /* .iti * {
     box-sizing: border-box;
-    -moz-box-sizing: border-box; }
+    -moz-box-sizing: border-box; 
+  } */
   .iti__hide {
     display: none; }
   .iti__v-hide {
@@ -77,7 +78,7 @@
   .iti__flag-box, .iti__country-name {
     margin-right: 6px; }
   .iti--allow-dropdown input, .iti--allow-dropdown input[type=text], .iti--allow-dropdown input[type=tel], .iti--separate-dial-code input, .iti--separate-dial-code input[type=text], .iti--separate-dial-code input[type=tel] {
-    padding-right: 6px;
+    /* padding-right: 6px; */
     padding-left: 52px;
     margin-left: 0; }
   .iti--allow-dropdown .iti__flag-container, .iti--separate-dial-code .iti__flag-container {

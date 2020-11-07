@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="D365PowerAppsComponents" constructor="InternationalPhoneInputControlIndex" version="0.0.1" display-name-key="InternationalPhoneInputControl" description-key="InternationalPhoneInputControl" control-type="standard">
+  <control namespace="D365PowerAppsComponents" constructor="InternationalPhoneInputComponentIndex" version="0.0.1" display-name-key="InternationalPhoneInputComponent" description-key="InternationalPhoneInputComponent" control-type="standard">
     <property name="PhoneNumber" display-name-key="PhoneNumber" description-key="PhoneNumber" of-type="SingleLine.Phone" usage="bound" required="true" />
     <!-- 
       Property node's of-type attribute can be of-type-group attribute. 
@@ -16,8 +16,7 @@
     <resources>
       <code path="index.ts" order="1"/>
       <css path="css/intlTelInput.css" order="1" />
-      <css path="css/officeUiFabricReact.css" order="2" />
-      <css path="css/InternationalPhoneInputControl.css" order="3" />
+      <css path="css/InternationalPhoneInputComponent.css" order="2" />
       <img path="img/flags.png"/>
       <img path="img/flags2.png"/>
       <!-- UNCOMMENT TO ADD MORE RESOURCES

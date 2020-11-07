@@ -1,26 +1,28 @@
 {
-  "name": "d365powerappscomponents",
+  "name": "d365.powerappscomponents",
   "version": "1.0.0",
-  "description": "Project containing your PowerApps Component Framework (PCF) control.",
+  "description": "",
   "scripts": {
-    "build": "pcf-scripts build",
-    "clean": "pcf-scripts clean",
-    "rebuild": "pcf-scripts rebuild",
-    "start": "pcf-scripts start",
-    "watch": "pcf-scripts start watch"
+    "upload": "node ./SolutionUploader/entrypoint.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariusso/D365.PowerAppsComponents.git"
+  },
+  "author": "Marius Solend",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariusso/D365.PowerAppsComponents/issues"
+  },
+  "homepage": "https://github.com/mariusso/D365.PowerAppsComponents#readme",
   "dependencies": {
-    "@types/node": "13.7.4",
-    "@types/powerapps-component-framework": "1.2.0",
-    "@types/react": "16.9.21",
-    "@types/react-dom": "16.9.5",
-    "office-ui-fabric-react": "7.95.0",
-    "react": "16.12.0",
-    "react-dom": "16.12.0"
-  },
-  "devDependencies": {
-    "intl-tel-input": "17.0.0",
-    "pcf-scripts": "^1.2.6",
-    "pcf-start": "1"
+    "@types/react": "^16.9.56",
+    "@types/react-dom": "^16.9.9",
+    "adal-node": "^0.2.1",
+    "nanoid": "^3.1.16",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "superagent": "^6.1.0",
+    "typescript": "^4.0.5"
   }
 }
