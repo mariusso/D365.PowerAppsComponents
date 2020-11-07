@@ -1,10 +1,10 @@
 To create project: (Only done first time)
-pac pcf init --namespace D365PowerAppComponents --name ReactSampleControl --template field
+pac pcf init --namespace D365PowerAppsComponents --name InternationalPhoneInputComponent --template field
 
 To create solution: (Only done first time)
-mkdir INPowerAppComponents
-cd INPowerAppComponents
-pac solution init --publisher-name crminsight --publisher-prefix ci
+mkdir InternationalPhoneInputSolution
+cd InternationalPhoneInputSolution
+pac solution init --publisher-name "Marius_Solend" --publisher-prefix ms
 pac solution add-reference --path "../"
 
 To build Power App Component Framework Project: (pfcproj)
@@ -14,6 +14,3 @@ After: msbuild
 To Build Solution Project: (cdsproj)
 First time: msbuild /t:build /restore
 After: msbuild /t:rebuild
-
-To debug specific control:
-npx pcf-start --codePath "./out/controls/*ControlName*"
