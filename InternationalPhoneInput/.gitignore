@@ -12,6 +12,3 @@
 # msbuild output directories
 /bin
 /obj
-
-# Solution directory
-/Solutions
