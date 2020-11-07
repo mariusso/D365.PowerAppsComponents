@@ -10,7 +10,7 @@
   <PropertyGroup>
     <Name>InternationalPhoneInput</Name>
     <ProjectGuid>29967d5e-c4e7-448d-a7c3-7c6d3558042e</ProjectGuid>
-    <OutputPath>$(MSBuildThisFileDirectory)out\components</OutputPath>
+    <OutputPath>$(MSBuildThisFileDirectory)out\controls</OutputPath>
   </PropertyGroup>
 
   <PropertyGroup>
