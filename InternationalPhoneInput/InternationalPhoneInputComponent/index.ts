@@ -48,7 +48,7 @@ export class InternationalPhoneInputComponentIndex implements ComponentFramework
 			this.phoneNumber = context.parameters.PhoneNumber.raw;
 
 			this.iti = await intlTelInput(this.phoneInput, {
-
+				allowDropdown: true,
 				autoHideDialCode: false,
 				autoPlaceholder: "Polite",
 				customContainer: "",
